@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electron — Интернет-магазин электроники</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Electron</a>
+            <div class="search-bar">
+                <span class="search-icon">🔍</span>
+                <input type="text" placeholder="Поиск">
+            </div>
+            <div class="header-actions">
+                <a href="#" class="action-item">
+                    <span class="icon">☰</span>
+                    <span>Каталог</span>
+                </a>
+                <a href="#" class="action-item">
+                    <span class="icon">🛒</span>
+                    <span>Корзина</span>
+                </a>
+                <a href="#" class="action-item">
+                    <span class="icon">👤</span>
+                    <span>Профиль</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main container">
+        <!-- Главный баннер -->
+        <section class="hero-banner">
+            <button class="banner-arrow prev">‹</button>
+            <div class="banner-content">
+                <div class="banner-text">
+                    <h1>Умная колонка</h1>
+                    <div class="banner-badge">СКИДКА 30%</div>
+                    <p class="banner-subtitle">при покупке второго товара</p>
+                </div>
+                <div class="banner-image">
+                    <img src="колонка.png" alt="Умная колонка">
+                </div>
+            </div>
+            <button class="banner-arrow next">›</button>
+        </section>
+
+        <!-- Категории каталога -->
+        <section class="section">
+            <h2 class="section-title">Каталог</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-img"><img src="1 тел.png" alt="Смартфоны"></div>
+                    <span class="category-name">Смартфоны</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-img"><img src="1 комп.png" alt="Ноутбуки"></div>
+                    <span class="category-name">Ноутбуки</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-img"><img src="1 моник.png" alt="Компьютеры"></div>
+                    <span class="category-name">Компьютеры</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-img"><img src="1 телев.png" alt="Телевизоры"></div>
+                    <span class="category-name">Телевизоры</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-img"><img src="1 планш.png" alt="Планшеты"></div>
+                    <span class="category-name">Планшеты</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-img"><img src="1 кол.png" alt="Колонки"></div>
+                    <span class="category-name">Колонки</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Акции / Товары -->
+        <section class="section">
+            <h2 class="section-title">Акции</h2>
+            <div class="products-wrapper">
+                <div class="products-grid">
+                    <!-- Карточка 1 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="1ай.png" alt="iPhone 14">
+                            <div class="dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <h3 class="product-name">Смартфон Apple iPhone 14 128GB</h3>
+                        <div class="product-price">54 999 ₽</div>
+                        <div class="product-footer">
+                            <span class="status in-stock">В наличии</span>
+                            <button class="like-btn">♡</button>
+                        </div>
+                        <button class="add-to-cart-btn">В корзину</button>
+                    </div>
+
+                    <!-- Карточка 2 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="2ай.png" alt="iPhone 12">
+                            <div class="dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <h3 class="product-name">Смартфон Apple iPhone 12 64GB</h3>
+                        <div class="product-price">42 980 ₽</div>
+                        <div class="product-footer">
+                            <span class="status in-stock">В наличии</span>
+                            <button class="like-btn">♡</button>
+                        </div>
+                        <button class="add-to-cart-btn">В корзину</button>
+                    </div>
+
+                    <!-- Карточка 3 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="хуа.png" alt="HUAWEI nova Y61">
+                            <div class="dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <h3 class="product-name">Смартфон HUAWEI nova Y61</h3>
+                        <div class="product-price">11 999 ₽</div>
+                        <div class="product-footer">
+                            <span class="status in-stock">В наличии</span>
+                            <button class="like-btn">♡</button>
+                        </div>
+                        <button class="add-to-cart-btn">В корзину</button>
+                    </div>
+
+                    <!-- Карточка 4 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="кся.png" alt="Redmi 128GB">
+                            <div class="dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <h3 class="product-name">Смартфон Xiaomi Redmi 128GB</h3>
+                        <div class="product-price">17 665 ₽</div>
+                        <div class="product-footer">
+                            <span class="status in-stock">В наличии</span>
+                            <button class="like-btn">♡</button>
+                        </div>
+                        <button class="add-to-cart-btn">В корзину</button>
+                    </div>
+
+                    <!-- Карточка 5 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="2ай.png" alt="iPhone 14 128GB">
+                            <div class="dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <h3 class="product-name">Смартфон Apple iPhone 14 128GB</h3>
+                        <div class="product-price">75 999 ₽</div>
+                        <div class="product-footer">
+                            <span class="status in-stock">В наличии</span>
+                            <button class="like-btn">♡</button>
+                        </div>
+                        <button class="add-to-cart-btn">В корзину</button>
+                    </div>
+                </div>
+                <button class="products-next-btn">›</button>
+            </div>
+        </section>
+
+        <!-- Карта -->
+        <section class="section map-section">
+            <div class="map-container">
+                <iframe 
+                    src="https://yandex.ru/map-widget/v1/?ll=37.443181%2C55.854816&z=14" 
+                    width="100%" 
+                    height="280" 
+                    frameborder="0" 
+                    allowfullscreen="true">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-contacts">
+                <p>Пн-Вс 10:00-19:00</p>
+                <p class="phone">+7(996)703-717-108</p>
+            </div>
+
+            <div class="footer-nav">
+                <a href="#">Новинки</a>
+                <a href="#">Доставка</a>
+                <a href="#">Оплата</a>
+            </div>
+
+            <div class="footer-socials">
+                <a href="#" class="social-icon"><img src="вк.png" alt="VK"></a>
+                <a href="#" class="social-icon"><img src="фэйс.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="Vector инст.png" alt="Instagram"></a>
+                <a href="#" class="social-icon"><img src="твитер.png" alt="Twitter"></a>
+                <a href="#" class="social-icon"><img src="ютуб.png" alt="YouTube"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
